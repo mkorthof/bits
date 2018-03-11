@@ -19,6 +19,6 @@ The last 2 entries in the menu use:
 - [Documentation](/Documentation)
 
 ### Changes:
-- automatically load microcode 
-- auto detect OS using various methods and boot it
+- automatically load microcode (```auto.cfg```)
+- auto detect OS using various methods and boot it (```boot_ext.cfg```)
 
