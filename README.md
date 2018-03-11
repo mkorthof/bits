@@ -7,16 +7,18 @@ This fork can be used to automatically load microcode before loading OS (using G
 
 I have successfullly tested this by booting from USB stick and Windows 10 (and Linux).
 
+Idea from: https://superuser.com/questions/1092286/how-to-update-cpus-microcode-with-grub-and-chainload-windows-10
+
 The last 2 entries in the menu use:
 - AIO Boot to boot Windows (https://www.aioboot.com/en/boot-windows-grub2/)
 - Sample GRUB script to autodetect operating systems
 
-Original documentation:
-- [INSTALL](INSTALL)
-- [README.txt](README.txt)
-- [Documentation](Documentation)
+### Original documentation:
+- [INSTALL](/INSTALL)
+- [README.txt](/README.txt)
+- [Documentation](/Documentation)
 
-Changes:
+### Changes:
 - automatically load microcode 
 - auto detect OS using various methods and boot it
 
