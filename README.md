@@ -14,7 +14,7 @@ The last 2 entries in the menu use:
 - Sample GRUB script to autodetect operating systems
 
 ### Original documentation:
-- [INSTALL](/INSTALL)
+- [INSTALL](/INSTALL.txt)
 - [README.txt](/README.txt)
 - [Documentation](/Documentation)
 
