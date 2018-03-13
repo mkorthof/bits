@@ -36,5 +36,5 @@ The last 2 entries in the menu use:
 
 ### Changes:
 - automatically load microcode ([auto.cfg](cfg/auto.cfg))
-- auto detect OS using various methods and boot it (([boot_ext.cfg](cfg/boot_ext.cfg))
+- auto detect OS using various methods and boot it ([boot_ext.cfg](cfg/boot_ext.cfg))
 
