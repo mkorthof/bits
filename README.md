@@ -1,5 +1,5 @@
 
-# BIOS Implementation Test Suite (BITS)
+# (AUTO) BIOS Implementation Test Suite (BITS)
 ## Modified to automatically load microcode before OS boot
 
 The reason for the existance of this fork is that manufacturers often do not support older motherboards/BIOS with updates.
@@ -38,3 +38,34 @@ The last 2 entries in the menu use:
 - automatically load microcode ([auto.cfg](cfg/auto.cfg))
 - auto detect OS using various methods and boot it ([boot_ext.cfg](cfg/boot_ext.cfg))
 
+## Auto Boot:
+
+First microcode is loaded and then OS is booted:
+
+* [toplevel.cfg](toplevel.cfg) includes:
+  * [auto.cfg](cfg/auto.cfg) which loads microcode ```mcu_load /boot/mcu.first /boot/mcu```
+  * [boot.cfg](cfg/boot.cfg) which loads ```menuentry "Boot first drive MBR"``` and includes [boot_ext.cfg](cfg/boot_ext.cfg)
+
+If your OS is not on the first drive try one of the other menu entries. If you have found an entry that works you can permanently change ```default``` in [boot_ext.cfg](cfg/boot_ext.cfg) (top).
+
+The menu entries you can choose from are:
+
+* Generic (BIOS/MBR):
+  * "Boot second drive MBR"
+  * "Boot first drive MBR, Extended partition"
+  * "Boot first drive MBR, Extended partition"
+
+* Linux (EFI, BIOS/MBR):
+  * "Linux (autodetect: /etc/passwd)"
+  * "Linux (seperate "/boot" on Extended partition)"
+  * "Load another configfile (autodetect: grub.cfg)"
+  * "Chainload MBR from file "linux.bin"
+
+* Windows (EFI, BIOS/MBR):
+  * "Microsoft Windows Vista/7/8/10 bootmgr (MBR)"
+  * "Microsoft Windows NT/2000/XP ntldr (MBR)"
+  * "Microsoft Windows UEFI"
+  * "Windows (aioboot)"
+
+* Other: BSD/ISOLINUX/DOS (BIOS/MBR):
+  * Last menuentry (osdetect)
