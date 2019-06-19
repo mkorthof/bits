@@ -55,8 +55,8 @@ If your OS is not on the first drive try one of the other menu entries. If you h
 The menu entries you can choose from are:
 
 * Generic (BIOS/MBR):
+  * "Boot first drive MBR"
   * "Boot second drive MBR"
-  * "Boot first drive MBR, Extended partition"
   * "Boot first drive MBR, Extended partition"
 
 * Linux (EFI, BIOS/MBR):
