@@ -11,6 +11,7 @@ I have successfullly tested it by booting from USB stick with Windows 10 (and Li
 
 ![menu](/images/menu.png)
 
+Configure Menu (microcode can be autloaded see below)
 ![microcode](/images/microcode.png)
 
 ### Notes:
