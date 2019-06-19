@@ -7,12 +7,15 @@ This leads to vulnerabilities like Meltdown/Spectre not getting patched while th
 This fork can be used to automatically load microcode before loading OS (using GRUB). By default it will try to boot from the first drive.
 I have successfullly tested it by booting from USB stick with Windows 10 (and Linux). It should work with other Windows versions and OS'es too.
 
-![boot](/images/boot.png)
+![boot](images/boot.png)
 
-![menu](/images/menu.png)
+_Boot an OS from disk loads after 2 seconds, unless a menu entry is selected_
 
-Configure Menu (microcode can be autloaded see below)
-![microcode](/images/microcode.png)
+![menu](images/menu.png)
+
+_"Configure Menu" (microcode can also be autoloaded, see **Auto Boot** below)_
+
+![microcode](images/microcode.png)
 
 ### Notes:
 - Microsoft apparently includes microcode updates now in Windows 10 for certain CPU's, this is ofcourse the preferred way to load microcode.
