@@ -8,7 +8,9 @@ This fork can be used to automatically load microcode before loading OS (using G
 I have successfullly tested it by booting from USB stick with Windows 10 (and Linux). It should work with other Windows versions and OS'es too.
 
 ![menu](/images/menu.png)
+
 ![menu](/images/boot.png)
+
 ![menu](/images/microcode.png)
 
 ### Notes:
@@ -55,8 +57,8 @@ If your OS is not on the first drive try one of the other menu entries. If you h
 The menu entries you can choose from are:
 
 * Generic (BIOS/MBR):
+  * "Boot first drive MBR"
   * "Boot second drive MBR"
-  * "Boot first drive MBR, Extended partition"
   * "Boot first drive MBR, Extended partition"
 
 * Linux (EFI, BIOS/MBR):
