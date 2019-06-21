@@ -1,20 +1,20 @@
 [submodule "deps/acpica"]
 	path = deps/acpica
-	url = ../acpica
+	url = https://github.com/biosbits/acpica
 	fetchRecurseSubmodules = true
 [submodule "deps/fdlibm"]
 	path = deps/fdlibm
-	url = ../fdlibm
+	url = https://github.com/biosbits/fdlibm
 	fetchRecurseSubmodules = true
 [submodule "deps/grub"]
 	path = deps/grub
-	url = ../grub
+	url = https://github.com/biosbits/grub
 	fetchRecurseSubmodules = true
 [submodule "deps/libffi"]
 	path = deps/libffi
-	url = ../libffi
+	url = https://github.com/biosbits/libffi
 	fetchRecurseSubmodules = true
 [submodule "deps/python"]
 	path = deps/python
-	url = ../python
+	url = https://github.com/biosbits/python
 	fetchRecurseSubmodules = true
