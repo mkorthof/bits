@@ -1,5 +1,5 @@
 
-# (AUTO) BIOS Implementation Test Suite (BITS)
+# AUTO BIOS Implementation Test Suite (BITS)
 ## Modified to automatically load microcode before OS boot
 
 The reason for the existance of this fork is that manufacturers often do not support older motherboards/BIOS with updates.
