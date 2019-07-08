@@ -28,7 +28,11 @@ _"Boot an OS from disk" loads after 2 seconds, unless a menu entry is selected_
 
 ![menu](images/menu.png)
 
-_"Configure Menu" (microcode can also be autoloaded, see **Auto Boot** below)_
+_Multiple OS entries can be selected, the last 2 were added automatically_
+
+![os](images/os.png)
+
+_"Configure Menu" (microcode can also be autoloaded, see [**Auto Boot**](#Auto-boot) below)_
 
 ![microcode](images/microcode.png)
 
@@ -60,41 +64,44 @@ https://forums.guru3d.com/threads/windows-how-to-get-latest-cpu-microcode-withou
 - [Documentation](Documentation)
 
 The last 2 entries in the menu use:
+
 - AIO Boot to boot Windows (https://www.aioboot.com/en/boot-windows-grub2/)
 - Sample GRUB script to autodetect operating systems
 
-### Changed from original:
+### Changed from original
+
 - automatically load microcode ([auto.cfg](cfg/auto.cfg))
 - auto detect OS using various methods and boot it ([boot_ext.cfg](cfg/boot_ext.cfg))
 
-## Auto Boot:
+## Auto Boot
 
 First microcode is loaded and then OS is booted:
 
-* [toplevel.cfg](toplevel.cfg) includes:
-  * [auto.cfg](cfg/auto.cfg) which loads microcode ```mcu_load /boot/mcu.first /boot/mcu```
-  * [boot.cfg](cfg/boot.cfg) which loads ```menuentry "Boot first drive MBR"``` and includes [boot_ext.cfg](cfg/boot_ext.cfg)
+- [toplevel.cfg](toplevel.cfg) includes:
+  - [auto.cfg](cfg/auto.cfg) which loads microcode ```mcu_load /boot/mcu.first /boot/mcu```
+  - [boot.cfg](cfg/boot.cfg) which loads ```menuentry "Boot first drive MBR"``` and includes
+  - [boot_ext.cfg](cfg/boot_ext.cfg)
 
 If your OS is not on the first drive try one of the other menu entries. If you have found an entry that works you can permanently change ```default``` in [boot_ext.cfg](cfg/boot_ext.cfg) (top).
 
 The menu entries you can choose from are:
 
-* Generic (BIOS/MBR):
-  * "Boot first drive MBR"
-  * "Boot second drive MBR"
-  * "Boot first drive MBR, Extended partition"
+- Generic (BIOS/MBR):
+  - "Boot first drive MBR"
+  - "Boot second drive MBR"
+  - "Boot first drive MBR, Extended partition"
 
-* Linux (EFI, BIOS/MBR):
-  * "Linux (autodetect: /etc/passwd)"
-  * "Linux (seperate "/boot" on Extended partition)"
-  * "Load another configfile (autodetect: grub.cfg)"
-  * "Chainload MBR from file "linux.bin"
+- Linux (EFI, BIOS/MBR):
+  - "Linux (autodetect: /etc/passwd)"
+  - "Linux (seperate "/boot" on Extended partition)"
+  - "Load another configfile (autodetect: grub.cfg)"
+  - "Chainload MBR from file "linux.bin"
 
-* Windows (EFI, BIOS/MBR):
-  * "Microsoft Windows Vista/7/8/10 bootmgr (MBR)"
-  * "Microsoft Windows NT/2000/XP ntldr (MBR)"
-  * "Microsoft Windows UEFI"
-  * "Windows (aioboot)"
+- Windows (EFI, BIOS/MBR):
+  - "Microsoft Windows Vista/7/8/10 bootmgr (MBR)"
+  - "Microsoft Windows NT/2000/XP ntldr (MBR)"
+  - "Microsoft Windows UEFI"
+  - "Windows (aioboot)"
 
-* Other: BSD/ISOLINUX/DOS (BIOS/MBR):
-  * Last menuentry (osdetect)
+- Other: BSD/ISOLINUX/DOS (BIOS/MBR):
+  - Last menuentry (osdetect)
