@@ -9,14 +9,16 @@ I have successfullly tested it by booting from USB stick with Windows 10 (and Li
 
 # Downloads
 
+<https://github.com/mkorthof/bits/releases>
+
 ### 2019-07-09
 
 - Now also available as ready-made images with the 'AUTO' changes included
 - Latest version of bootable ISO and USB image ready to written to disk:
 
-  - [bits-2107.zip](bits-2107.zip) (250MB iso)
-  - [bits-2107.img](bits-2107.img) (512MB img)
-  - [SHA512SUMS](SHA512SUMS)
+  - [bits-2107.zip](https://github.com/mkorthof/bits/releases/download/bits-2107/bits-2107.zip) (iso)
+  - [bits-2107-img.zip](https://github.com/mkorthof/bits/releases/download/bits-2107/bits-2107-img.zip) (usb img, 512MB)
+  - [SHA512SUMS](https://github.com/mkorthof/bits/releases/download/bits-2107/SHA512SUMS)
 
 # Screenshots
 
