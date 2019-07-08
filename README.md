@@ -1,6 +1,6 @@
 
 # AUTO BIOS Implementation Test Suite (BITS)
-## Modified to automatically load microcode before OS boot
+## Modified to automatically load microcode before OS boot: "AUTO-BITS"
 
 The reason for the existance of this fork is that manufacturers often do not support older motherboards/BIOS with updates.
 This leads to vulnerabilities like Meltdown/Spectre not getting patched while the microcode *is* available.
